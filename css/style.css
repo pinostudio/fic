@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+ *
+ * COLORS
+ *
+ */
+
+/*
+	Dark Orange: #ff7211;
+	Light Orange: #ff9300;
+	Yellow: #ffb500;
+	White: #fff;
+	Dark Gray: #333;
+*/
+
+/*
+ *
+ * FONTS
+ *
+ */
+
+@font-face {
+	font-family: 'Leckerli';
+	src: url(../fonts/LeckerliOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Noto Bold';
+	src: url(../fonts/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+	font-family: 'Noto Medium';
+	src: url(../fonts/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+	font-family: 'Noto Light';
+	src: url(../fonts/NotoSansJP-Light.otf);
+}
+
+/*
+ *
+ * GLOBAL
+ *
+ */
+
+main {
+	font-family: 'Noto Bold', sans-serif;
+	text-align: center;
+	/*padding: 100px;*/
+	background-color: #ffb500;
+	padding-top: 500px;
+}
+
+/*
+ *
+ * NAV
+ *
+ */
+
+nav {
+	font-family: 'Noto Bold', sans-serif;
+	letter-spacing: 1px;
+	background-color: transparent;
+	height: auto;
+	padding: 60px 0 70px 0;
+	margin: 0;
+	line-height: 0;
+	box-shadow: 0 0 0 0;
+}
+
+nav ul a {
+	font-size: 1em;
+	/*color: red;*/
+}
+
+.dark-nav { /* for js */
+	background-color: #ff9300;
+}
+
+.left-menu {
+	/*height: 300px;*/
+}
+
+.left-menu img {
+	height: 100px;
+	padding-left: 60px;
+}
+
+.center-menu {
+	text-align: center;
+}
+
+.center-menu ul {
+	display: inline-block;
+}
+
+.center-menu li {
+	margin: 50px 5px 0 5px;
+}
+
+.right-menu {
+	text-align: right;
+}
+
+.right-menu ul {
+	display: inline-block;
+	padding-right: 60px;
+}
+
+.right-menu ul a {
+	padding: 0;
+}
+
+.right-menu li {
+	margin: 30px 5px 0 5px;
+}
+
+.right-menu img {
+	height: 40px;
+	margin: 0 0 0 0;
+}
+
+.btn-inv-white {
+	border: 2px solid white;
+	padding: 18px 12px;
+}
+
+
+
+/*
+ *
+ * Media Query S - Mobile
+ *
+ */
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
+
+/*
+ *
+ * Media Query M - Tablet
+ *
+ */
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+
+
+
+}
+
+/*
+ *
+ * Media Query L - Desktop
+ *
+ */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	/* NAV */
+
+	nav {
+		height: auto;
+		padding: 50px 0 70px 0;
+		margin: 0;
+		line-height: 0;
+	}
+
+	.left-menu img {
+		padding-left: 40px;
+	}
+
+	.center-menu li {
+		padding: 0;
+		/*font-size: 1.5em;*/
+	}
+
+	.right-menu ul {
+		padding-right: 30px;
+	}
+
+	.right-menu li {
+		padding: 0 5px;
+		margin: 30px 0 0 0;
+	}
+
+	nav ul a {
+		font-size: 1em;
+		/*color: red;*/
+		padding: 0 5px;
+	}
+
+}
+
+/*
+ *
+ * Media Query XL - Large Desktop
+ *
+ */
+
+@media only screen and (min-width: 1200px){
+
+
+
+}
