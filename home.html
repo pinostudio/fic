@@ -14,6 +14,9 @@
 	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 	<!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
 
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<!-- Materialize CSS -->
 	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 	
@@ -24,7 +27,7 @@
 <body>
 
 	<div class="navbar-fixed">
-		<nav class="nav">
+		<nav class="nav nav-fix">
 			<div class="nav-wrapper">
 
 				
@@ -33,58 +36,68 @@
 					<!-- Left Menu -->
 					<div class="left-menu col l3">
 						<a href="#" class="brand-logo">
-							<img src="img/icons/white.png">
+							<img src="img/icons/white.png" class="brand-img brand-img-fix">
 						</a>
 					</div> <!-- ./left-menu -->
 
-					<!-- Center Menu -->
-					<div class="center-menu col l6">
-						<ul id="nav-mobile" class="hide-on-med-and-down">
-							<li>
-								<a href=#">
-									HOME
-								</a>
-							</li>
-							<li>
-								<a href=#">
-									ABOUT
-								</a>
-							</li>
-							<li>
-								<a href=#">
-									FLAVOURS
-								</a>
-							</li>
-							<li>
-								<a href=#">
-									DISCOVER
-								</a>
-							</li>
-							<li>
-								<a href=#">
-									CONTACT
-								</a>
-							</li>
-						</ul>
-					</div> <!-- ./center-menu -->
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
-					<!-- Right Menu -->
-					<div class="right-menu col l3">
-						<ul id="nav-mobile" class="hide-on-med-and-down">
-							<li>
-								<div class="btn-inv-white">
-									<a href=#">
-										WHERE TO BUY
+					<div class="sidenav" id="mobile-demo">
+						
+					</div>
+
+					<div>
+						<!-- Center Menu -->
+						<div class="center-menu col l6">
+							<ul id="nav-mobile" class="hide-on-med-and-down">
+								<li>
+									<a href="home.html">
+										HOME
 									</a>
-								</div>
-							</li>
-							<li>
-								<a href=#">
-									<img src="img/icons/white.png">
-								</a>
-							</li>
-						</ul>
-					</div> <!-- ./right-menu -->
+								</li>
+								<li>
+									<a href=#">
+										ABOUT
+									</a>
+								</li>
+								<li>
+									<a href=#">
+										FLAVOURS
+									</a>
+								</li>
+								<li>
+									<a href=#">
+										DISCOVER
+									</a>
+								</li>
+								<li>
+									<a href=#">
+										CONTACT
+									</a>
+								</li>
+							</ul>
+						</div> <!-- ./center-menu -->
+
+						<!-- Right Menu -->
+						<div class="right-menu col l3">
+							<ul id="nav-mobile" class="hide-on-med-and-down">
+								<li>
+									<div class="btn-inv-white">
+										<a href=#">
+											WHERE TO BUY
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href=#">
+										<img src="img/icons/white.png">
+									</a>
+								</li>
+							</ul>
+						</div> <!-- ./right-menu -->
+					</div>
+
+					
 
 				</div> <!-- ./row -->
 			</div>
@@ -175,14 +188,32 @@
 
 	<!-- Custom JS -->
 	<script type="text/javascript">
+
+		// Fixed Navbar
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 
 			if (scroll >= 250) {
 				$(".nav").addClass("dark-nav");
+				$(".nav").addClass("nav-fix");
+				$(".brand-img").addClass("brand-img-fix");
 			} else {
 				$(".nav").removeClass("dark-nav");
+				$(".nav").removeClass("nav-fix");
+				$(".brand-img").removeClass("brand-img-fix");
 			}
+		});
+
+		// Sidenav
+		// document.addEventListener('DOMContentLoaded', function() {
+		// 	var elems = document.querySelectorAll('.sidenav');
+		// 	var instances = M.Sidenav.init(elems, options);
+		// });
+
+		//   // Or with jQuery
+
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
 		});
 	</script>
 
