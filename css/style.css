@@ -52,12 +52,18 @@
  *
  */
 
-main {
-	font-family: 'Noto Bold', sans-serif;
-	text-align: center;
-	/*padding: 100px;*/
-	background-color: #ffb500;
-	padding-top: 500px;
+body {
+	background-color: rgba(255, 149, 0, .10);
+	color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/*line-height: 0;*/
 }
 
 /*
@@ -68,7 +74,8 @@ main {
 
 /* Initial Navbar*/
 
-nav {
+nav,
+footer {
 	font-family: 'Noto Bold', sans-serif;
 	letter-spacing: 1px;
 	background-color: transparent;
@@ -77,11 +84,17 @@ nav {
 	margin: 0;
 	line-height: 0;
 	box-shadow: 0 0 0 0;
+	/*color: white;*/
 }
 
-nav ul a {
+.navbar-fixed {
+	height: 0;
+}
+
+nav ul a,
+footer ul a {
 	font-size: .9em;
-	/*color: red;*/
+	color: white;
 }
 
 .dark-nav { /* for js */
@@ -136,6 +149,338 @@ nav ul a {
 	padding: 18px 12px;
 }
 
+.center-menu a:hover {
+	background-color: transparent;
+	color: #ff7211;
+	border-bottom: 3px solid #ff7211;
+	padding: 0 5px 15px 5px;
+	margin: 0 10px;
+}
+
+.right-menu a:hover {
+	color: #ff7211;
+	height: 700px;
+	width: 100%;
+	background-color: transparent;
+}
+
+/*
+ *
+ * FOOTER
+ *
+ */
+
+.page-footer {
+	background-color: #ff9300;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.page-footer .right-menu {
+	text-align: left;
+}
+
+.page-footer .right-menu a {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.contact {
+	margin-bottom: 30px;
+}
+
+.contact div {
+	padding: 8px;
+	/*display: block;*/
+	background-color: #ffb500;
+	margin: 0;
+	/*padding: 20px;*/
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.contact img {
+	height: 18px;
+}
+
+.copyright {
+	font-family: 'Noto Light', sans-serif;
+	font-size: .8em;
+	letter-spacing: 1px;
+}
+
+/*
+ *
+ * HOME
+ *
+ */
+
+/*
+ * Carousel
+ */
+
+.fic-slide {
+	background-color: #ffb500;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../img/hero//1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.fic-slide-overlay {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fic-slide-overlay h1 {
+	font-family: 'Leckerli', serif;
+	font-size: 10em;
+	color: white;
+	margin: 0;
+}
+
+.fic-slide-overlay h2 {
+	font-family: 'NotoSansJP-Medium', sans-serif;
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	margin: 20px 0 70px 0;
+}
+
+.btn-brush {
+	/*background: #ff9300;*/
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	font-size: 1em;
+	background-image: url('../img/assets/brush.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	font-family: 'Noto Medium', sans-serif;
+	letter-spacing: 1px;
+}
+
+/*
+ * Home Story
+ */
+
+.home-story {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px;
+}
+
+.home-story img {
+	height: 60px;
+}
+
+.home-story h2 {
+	font-family: 'Leckerli', serif;
+	color: #ff7211;
+	font-size: 5em;
+}
+.home-story p {
+	font-family: 'Noto Light', sans-serif;
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+
+/*
+ * Blocks
+ */
+
+.block {
+	height: 95vh;
+	background-color: #ff7211;
+	border: 1px solid black;
+	position: relative;
+	margin: 0 auto;
+}
+
+.block-text {
+	width: 80%;
+	text-align: right;
+	position: absolute;
+	padding-left: 200px;
+	color: white;
+}
+
+.block-text h2 {
+	font-family: 'Noto Bold', sans-serif;
+	font-size: 6.25em;
+	text-transform: uppercase;
+}
+
+.block-text p {
+	font-family: 'Noto Light', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+/*
+ * Instagram
+ */
+
+.instagram {
+	width: 90%;
+	height: 300px;
+	margin: 80px auto;
+	background-color: #ff7211;
+	/*text-align: center;*/
+	position: relative;
+}
+
+.instagram p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'noto bold', sans-serif;
+	letter-spacing: 1px;
+	font-size: 2em;
+}
+
+/*
+ *
+ * ABOUT
+ *
+ */
+
+/*
+ * Header
+ */
+
+.fic-header {
+	background-color: #ffb500;
+	height: 50vh;
+	width: 100vw;
+	background-image: url('../img/hero//1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.fic-header-overlay {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fic-header-overlay h2 {
+	font-family: 'noto bold', sans-serif;
+	font-size: 4em;
+	color: white;
+	text-transform: uppercase;
+}
+
+/*
+ * Body
+ */
+
+.timeline {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.timeline .intro {
+	text-align: center;
+	width: 80%;
+	margin: 60px auto;
+}
+
+.timeline .intro h2 {
+	font-family: 'Leckerli', serif;
+	color: #ff7211;
+}
+
+.timeline .year,
+.timeline .event {
+	color: #ff7211;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.timeline .year {
+	font-family: 'noto bold', sans-serif;
+}
+
+.timeline .event {
+	font-family: 'noto light', sans-serif;
+	margin-bottom: 18px;
+}
+
+.timeline .photo {
+	height: 300px;
+	background: #ff7211;
+	margin-bottom: 18px;
+}
+
+.about-one,
+.about-two {
+	margin-bottom: 60px;
+	/*padding: 200px;*/
+}
+
+.about-one div,
+.about-two div {
+	padding: 0 40px;
+}
+
+/*
+ * Mid-hero
+ */
+
+.parallax-container {
+	/*height: 700px;*/
+}
+
+/*
+ * MVC
+ */
+
+.mvc {
+	width: 70%;
+	margin: 50px auto;
+}
+
+.mvc-group {
+	padding: 20px;
+}
+
+.mvc img {
+	height: 50px;
+}
+
+.mvc h3 {
+	font-family: 'Noto Medium', sans-serif;
+	color: #ff7211;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 20px 0;
+	margin: 0;
+}
+
+.mvc p {
+	font-family: 'Noto Light', sans-serif;
+	font-size: 1em;
+}
+
 
 /*
  *
@@ -148,7 +493,8 @@ nav ul a {
 
 	/* NAV */
 
-	nav {
+	nav,
+	footer {
 		padding: 25px 25px 19px 25px;
 	}
 
@@ -167,7 +513,7 @@ nav ul a {
 		margin: 0;
 	}
 
-	.nav-wrapper .row {
+	.nav-wrapper .row, {
 		padding: 0;
 		margin: 0;
 	}
@@ -185,7 +531,8 @@ nav ul a {
 
 	/* NAV */
 
-	nav {
+	nav,
+	footer {
 		padding: 25px 25px 19px 25px;
 	}
 
@@ -222,7 +569,8 @@ nav ul a {
 
 	/* NAV */
 
-	nav {
+	nav,
+	footer {
 		height: auto;
 		padding: 50px 0 70px 0;
 		margin: 0;
@@ -247,7 +595,8 @@ nav ul a {
 		margin: 20px 0 0 0;
 	}
 
-	nav ul a {
+	nav ul a,
+	footer ul a {
 		font-size: 1em;
 		/*color: red;*/
 		padding: 0 5px;
