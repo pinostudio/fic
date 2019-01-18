@@ -112,88 +112,91 @@
 				<div class="carousel-slide"></div>
 			</a>
 		</div> -->
-		<div class="fic-slide">
-			<div class="fic-slide-overlay">
-				<h1>Scoop Shops</h1>
-				<h2>Bringing you sweet and fruity fun with every scoop!</h2>
-				<a href="!" class="btn-brush">Find your flavour</a>
-			</div>
+		<div class="fic-slim-header">
 		</div> <!-- ./carousel -->
 
-		<div class="home-story">
-			<img src="img/icons/orange.png">
-			<h2>
-				Our Story
-			</h2>
-			<p>
-				The Food People, Inc. (TFPI) was formed in 1997 with the express desire to create premium ice cream for export under the brand Fruits in Ice Cream (FIC). Comprised of former key executives of the Philippines’ largest food and beverage conglomerate, the founders of TFPI have a collective experience of more than two decades in the international and domestic ice cream business.
-			</p>
-			<a href="#" class="btn-brush">Read More</a>
-		</div> <!-- ./home-story -->
+		<div class="distributor-wrapper">
+			<div class="search-group">
+				<form>
+					<div class="input-field">
+						<input id="search" type="search" required>
+						<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+						<i class="material-icons">close</i>
+					</div>
+				</form>
+			</div>
 
-		<div class="blocks-wrapper">
-			<div class="row">
-				<div class="col block valign-wrapper s12 l6">
-					<div class="block-text">
-						<h2>
-							Our Flavours
-						</h2>
-						<p>
-							What is your favorite?
-						</p>
-						<a class="btn-brush" href="flavours.html">
-							View all
-						</a>
+			<div class="distributor-group">
+				<div class="row">
+
+					<div class="col l5">
+						<div class="distributor-details">
+							<h2>Where to buy?</h2>
+							
+							<div class="row">
+								<div class="col s2">
+									<img src="img/icons/orange.png">
+								</div>
+								<div class="col s9 distributor-category">
+									Ice Cream Shop
+								</div>		
+							</div>
+
+							<div class="row">
+								<div class="col s2">
+									<img src="img/icons/orange.png">
+								</div>
+								<div class="col s9 distributor-category">
+									Scooping Station
+								</div>		
+							</div>
+
+							<div class="row">
+								<div class="col s2">
+									<img src="img/icons/orange.png">
+								</div>
+								<div class="col s9 distributor-category">
+									Restaurant
+								</div>		
+							</div>
+
+							<div class="row">
+								<div class="col s2">
+									<img src="img/icons/orange.png">
+								</div>
+								<div class="col s9 distributor-category">
+									Grocery
+								</div>		
+							</div>
+
+							<div class="row">
+								<div class="col s2">
+									<img src="img/icons/orange.png">
+								</div>
+								<div class="col s9 distributor-category">
+									Home Distrobutor
+								</div>		
+							</div>
+
+
+
+
+						</div>					
+					</div>
+
+					<div class="col l7">
+						<div class="distributor-map">
+							
+						</div>
 					</div>
 				</div>
-
-				<div class="col block valign-wrapper s12 l6">
-					<div class="block-text">
-						<h2>
-							Where to buy
-						</h2>
-						<p>
-							One scoop or two?
-						</p>
-						<a class="btn-brush" class="contact.html">
-							Find us
-						</a>
-					</div>
-				</div>
-
-				<div class="col block valign-wrapper s12 l6">
-					<div class="block-text">
-						<h2>
-							Chill with us
-						</h2>
-						<p>
-							See our upcoming events
-						</p>
-						<a class="btn-brush" href="discover.html">
-							See schedule
-						</a>
-					</div>
-				</div>
-
-				<div class="col block valign-wrapper s12 l6">
-					<div class="block-text">
-						<h2>
-							Start scooping
-						</h2>
-						<p>
-							Want to be a distributor?
-						</p>
-						<a class="btn-brush" class="distributor.html">
-							Learn more
-						</a>
-					</div>
-				</div>
-			</div> <!-- ./row -->
-		</div> <!-- ./blocks-wrapper -->
-
-		<div class="instagram">
-			<p>INSTAGRAM PLUGIN</p>
+				
+			
 		</div>
+
+		</div>
+
+		
 
 	</main> <!-- /.main -->
 
@@ -280,11 +283,11 @@
 	</nav> 
 	<!-- ./footer -->
 
-	<!-- Materialize JS -->
-	<script type="text/javascript" src="js/materialize.js"></script>
-
 	<!-- import jquery -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Materialize JS -->
+	<script type="text/javascript" src="js/materialize.js"></script>
 
 	<!-- Custom JS -->
 	<script type="text/javascript">
@@ -317,6 +320,18 @@
 		// $('.carousel.carousel-slider').carousel({
 		// 	fullWidth: true;
 		// });
+
+		// Parallax
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+		
+		// Character Count Textarea
+		$(document).ready(function() {
+			$('input#input_text, textarea#textarea2').characterCounter();
+		});
+		       
+
 	</script>
 
 </body>
