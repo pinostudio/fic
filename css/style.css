@@ -323,6 +323,10 @@ nav .center-menu a:hover {
 	float: right;
 }
 
+input[type=search]:not(.browser-default) {
+	height: 2rem;
+}
+
 .search-group form {
 }
 
