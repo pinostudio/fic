@@ -153,6 +153,11 @@ footer ul a {
 .btn-inv-white {
 	border: 2px solid white;
 	padding: 18px 12px;
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .btn-inv-white:hover {
@@ -362,6 +367,7 @@ input[type=search]:not(.browser-default) {
 	margin-top: 11px;
 	font-family: 'Noto Medium', sans-serif;
 	font-size: 1.2em;
+	color: #333;
 } 
 
 .distributor-group {
@@ -425,11 +431,15 @@ input[type=search]:not(.browser-default) {
 	background-position: center center;
 	font-family: 'Noto Medium', sans-serif;
 	letter-spacing: 1px;
-	/*background-attachment: fixed;*/
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .btn-brush:hover {
-	opacity: .7;
+	filter: brightness(1.2);
 	cursor: pointer;
 }
 
@@ -517,12 +527,15 @@ input[type=search]:not(.browser-default) {
 	font-family: 'Noto Bold', sans-serif;
 	font-size: 5em;
 	text-transform: uppercase;
+	margin-bottom: 7px;
 }
 
 .block-text p {
-	font-family: 'Noto Light', sans-serif;
-	font-size: 2em;
+	font-family: 'Noto Medium', sans-serif;
+	font-size: 1.5em;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
 	margin-bottom: 30px;
 }
 
@@ -700,7 +713,7 @@ input[type=search]:not(.browser-default) {
  */
 
 .flavor-filter {
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
 	padding: 30px;
 	text-align: center;
@@ -710,8 +723,9 @@ input[type=search]:not(.browser-default) {
 	font-family: 'Noto Bold', sans-serif;
 	text-transform: uppercase;
 	color: #ff7211;
+	font-size: .8em;
 	/*float: left;*/
-	margin: 30px;
+	margin: 30px 10px;
 	text-align: center;
 	display: inline-block;
 }
@@ -724,6 +738,12 @@ input[type=search]:not(.browser-default) {
 .flavor-page i {
 	font-size: 1em;
 	padding-top: 20px;
+}
+
+.flavor-filter img {
+	height: 30px;
+	margin-bottom: -10px;
+	padding-right: 10px;
 }
 
 /*
@@ -740,7 +760,7 @@ input[type=search]:not(.browser-default) {
 	/*height: 550px;*/
 	/*width: 100vw;*/
 	/*background-image: url('../img/flavors//1.jpg');*/
-	/*background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	/*background-size: cover;*/
 	/*background-position: center center;*/
 	position: relative;
@@ -790,7 +810,25 @@ input[type=search]:not(.browser-default) {
 .flavor-group-overlay img {
 	height: 25px;
 	margin-top: 8px;
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 	/*float: right;*/
+}
+
+.flavor-group-overlay a {
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.flavor-group-overlay img:hover,
+.flavor-group-overlay a:hover {
+	filter: brightness(1.2);
 }
 
 .flavor-group-overlay .icon {
@@ -849,7 +887,7 @@ input[type=search]:not(.browser-default) {
 	background-color: #ffb500;
 	height: 40vh;
 	width: 100vw;
-	background-image: url('../img/hero//1.jpg');
+	background-image: url('../img/hero/1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -867,6 +905,11 @@ input[type=search]:not(.browser-default) {
 	font-family: 'Noto Light', sans-serif;
 	font-size: 1em;
 	color: #ff7211;
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .flavor-page .photo {
@@ -1054,6 +1097,11 @@ input[type=search]:not(.browser-default) {
 .blog-btn {
 	text-align: center;
 	margin: 30px 0;
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 /*
@@ -1079,7 +1127,7 @@ input[type=search]:not(.browser-default) {
 }
 
 .contact-map {
-	height: 700px;
+	height: 50vh;
 	width: 100%;
 	/*background-color: #ff7211;*/
 	background-image: url('../img/holders/map.jpg');
@@ -1251,7 +1299,7 @@ input[type=search]:not(.browser-default) {
 	}
 
 	.block-text {
-		margin: 0 0 0 50px;
+		margin: 0 0 0 70px;
 		padding: 0;
 		width: 65%;
 	}
@@ -1321,9 +1369,9 @@ input[type=search]:not(.browser-default) {
 	}
 
 	.flavor-filter {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
-		text-align: center;
+		text-align: left;
 	}
 
 	.flavor-filter li {
@@ -1588,8 +1636,8 @@ input[type=search]:not(.browser-default) {
 	/* Navbar On-scroll */
 
 	.brand-img-fix {
-		height: 42px;
-		margin-top: 20px;
+		height: 60px;
+		margin-top: 15px;
 	}
 
 	.nav-fix {
@@ -1656,8 +1704,8 @@ input[type=search]:not(.browser-default) {
 	/* Navbar On-scroll */
 
 	.brand-img-fix {
-		height: 42px;
-		margin-top: 20px;
+		height: 60px;
+		margin-top: 15px;
 	}
 
 	.nav-fix {
