@@ -1261,7 +1261,9 @@ input[type=search]:not(.browser-default) {
 	}
 
 	.block-text p {
-		font-size: 1em;
+		font-size: 1.3em;
+		letter-spacing: 1px;
+		font-family: 'Noto Medium', sans-serif;
 	}
 
 	.instagram {
