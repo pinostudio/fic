@@ -4,8 +4,8 @@
 
 	<!-- Metadata -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-width=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 	<!-- Title -->
 	<title>Fruits in Ice Cream</title>
@@ -27,27 +27,22 @@
 <body>
 
 	<div class="navbar-fixed">
-		<nav class="nav nav-fix">
+		<nav class="nav">
 			<div class="nav-wrapper">		
 				<div class="row">
 					<!-- Left Menu -->
 					<div class="left-menu col l3">
-						<a href="#" class="brand-logo">
+						<a href="home.html" class="brand-logo">
 							<img src="img/icons/white.png" class="brand-img brand-img-fix">
 						</a>
 					</div> <!-- ./left-menu -->
 
-					<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-
-					<!-- Sidenav -->
-					<div class="sidenav" id="mobile-demo">
-						
-					</div>
+					<a data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
 					<div>
 						<!-- Center Menu -->
 						<div class="center-menu col l6">
-							<ul id="nav-mobile" class="hide-on-med-and-down">
+							<ul class="hide-on-med-and-down">
 								<li>
 									<a href="home.html">
 										HOME
@@ -64,7 +59,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="dicover.html"">
+									<a href="discover.html"">
 										DISCOVER
 									</a>
 								</li>
@@ -80,11 +75,11 @@
 						<div class="right-menu col l3">
 							<ul id="nav-mobile" class="hide-on-med-and-down">
 								<li>
-									<div class="btn-inv-white">
-										<a href=#">
+									<a href="distributor.html">
+										<div class="btn-inv-white">
 											WHERE TO BUY
-										</a>
-									</div>
+										</div>
+									</a>
 								</li>
 								<li>
 									<a href=#">
@@ -93,10 +88,55 @@
 								</li>
 							</ul>
 						</div> <!-- ./right-menu -->
-					</div>
+					</div> <!-- ./center-right div -->
 				</div> <!-- ./row -->
 			</div>
 		</nav>
+	</div>
+	
+	<!-- Sidenav -->
+	<div class="sidenav" id="mobile-demo">
+		<a href="home.html" class="brand-logo">
+			<img src="img/icons/white.png" class="brand-img brand-img-fix">
+		</a>
+		<ul>
+			<li>
+				<a href="home.html">
+					HOME
+				</a>
+			</li>
+			<li>
+				<a href="about.html"">
+					ABOUT
+				</a>
+			</li>
+			<li>
+				<a href="flavours.html">
+					FLAVOURS
+				</a>
+			</li>
+			<li>
+				<a href="discover.html"">
+					DISCOVER
+				</a>
+			</li>
+			<li>
+				<a href="contact.html">
+					CONTACT
+				</a>
+			</li>
+			<hr>
+			<li>
+				<a href="contact.html">
+					WHERE TO BUY
+				</a>
+			</li>
+			<li>
+				<a href="faq.html">
+					FAQ
+				</a>
+			</li>			
+		</ul>
 	</div>
 
 	<main>
@@ -123,7 +163,7 @@
 			<div class="flavor-filter clear">
 				<ul>
 					<li>
-						See all	
+						View all	
 					</li>
 					<li>
 						Limited Edition
@@ -416,19 +456,16 @@
 	</main> <!-- /.main -->
 
 	<!-- Footer -->
-	<nav class="page-footer">
+	<footer class="page-footer">
 
 		<div class="link">
 			<div class="row">
 				<!-- Left Menu -->
 				<div class="left-menu col l3">
-
 				</div> <!-- ./left-menu -->
 
-				<div>
-				
 				<!-- Center Menu -->
-				<div class="center-menu col l6">
+				<div class="center-menu col l6 hide-on-med-and-down">
 					<ul>
 						<li>
 							<a href="home.html">
@@ -446,7 +483,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="dicover.html"">
+							<a href="discover.html"">
 								DISCOVER
 							</a>
 						</li>
@@ -459,14 +496,14 @@
 				</div> <!-- ./center-menu -->
 
 				<!-- Right Menu -->
-				<div class="right-menu col l3">
+				<div class="right-menu col l3 hide-on-med-and-down">
 					<ul>
 						<li>
-							<div class="btn-inv-white">
-								<a href=#">
+							<a href="faq.html">
+								<div class="btn-inv-white">
 									FAQ
-								</a>
-							</div>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div> <!-- ./right-menu -->
@@ -494,9 +531,8 @@
 		<div class="copyright">
 			<small>&copy; The Food People, Inc. 2019 - All rights reserved</small>
 		</div>
-
-	</nav> 
-	<!-- ./footer -->
+		
+	</footer> <!-- ./footer -->
 
 	<!-- import jquery -->
 	<script src="js/jquery-3.2.1.min.js"></script>

@@ -55,6 +55,11 @@
 body {
 	background-color: rgba(255, 149, 0, .10);
 	color: #333;
+	/*width: 100%;*/
+}
+
+main {
+	/*width: 100%;*/
 }
 
 h1,
@@ -65,6 +70,7 @@ h5,
 h6 {
 	/*line-height: 0;*/
 }
+
 
 /*
  *
@@ -80,7 +86,7 @@ footer {
 	letter-spacing: 1px;
 	background-color: transparent;
 	height: auto;
-	padding: 60px 0 70px 0;
+	padding: 30px 0 70px 0;
 	margin: 0;
 	line-height: 0;
 	box-shadow: 0 0 0 0;
@@ -149,7 +155,11 @@ footer ul a {
 	padding: 18px 12px;
 }
 
-.center-menu a:hover {
+.btn-inv-white:hover {
+	border: 2px solid #ff7211;
+}
+
+nav .center-menu a:hover {
 	background-color: transparent;
 	color: #ff7211;
 	border-bottom: 3px solid #ff7211;
@@ -159,9 +169,35 @@ footer ul a {
 
 .right-menu a:hover {
 	color: #ff7211;
-	height: 700px;
+	/*height: 700px;*/
 	width: 100%;
 	background-color: transparent;
+}
+
+/*
+ *
+ * SIDENAV
+ *
+ */
+
+.sidenav {
+	background-color: #ff9300;
+}
+
+.sidenav img {
+	height: 100px;
+	margin: 40px 0 20px 12px;
+}
+
+.sidenav li > a {
+	color: white;
+	font-family: 'Noto Medium', sans-serif;
+	/*line-height: 1.5em;*/
+}
+
+.sidenav hr {
+	margin: 30px;
+	border: 1px solid rgba(255,255,255,.5);
 }
 
 /*
@@ -183,6 +219,28 @@ footer ul a {
 .page-footer .right-menu a {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.page-footer .center-menu li {
+	float: left;
+	margin: 40px 15px 10px 15px;
+	padding: 0 5px 5px 5px;
+}
+
+.page-footer .center-menu li:hover {
+	/*float: left;
+	margin: 40px 20px 0 20px;
+	padding: 0;*/
+}
+
+.page-footer .center-menu a:hover {
+	background-color: transparent;
+	color: #ff7211;
+	border-bottom: 3px solid #ff7211;
+	/*padding: 0 5px 15px 5px;*/
+	/*margin: 0 10px;*/
+	padding: 0 5px 5px 5px;
+	margin: 40px -15px 10px -15px;
 }
 
 .contact {
@@ -254,8 +312,12 @@ footer ul a {
  */
 
 .distributor-wrapper {
-	/*margin: 50px auto;*/
 }
+
+.search-wrapper {
+	margin: 20px auto;
+}
+
 .search-group {
 	width: 10%;
 	float: right;
@@ -266,7 +328,7 @@ footer ul a {
 
 .distributor-map {
 	width: 100%;
-	height: 600px;
+	height: 500px;
 	background-color: #ff7211;
 }
 
@@ -284,6 +346,8 @@ footer ul a {
 	font-family: 'Noto Medium', sans-serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 30px 0;
 }
 
 .distributor-category {
@@ -291,6 +355,10 @@ footer ul a {
 	font-family: 'Noto Medium', sans-serif;
 	font-size: 1.2em;
 } 
+
+.distributor-group {
+	margin-bottom: 50px;
+}
 
 /*
  *
@@ -311,6 +379,7 @@ footer ul a {
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .fic-slide-overlay {
@@ -323,14 +392,14 @@ footer ul a {
 
 .fic-slide-overlay h1 {
 	font-family: 'Leckerli', serif;
-	font-size: 10em;
+	font-size: 7em;
 	color: white;
 	margin: 0;
 }
 
 .fic-slide-overlay h2 {
 	font-family: 'NotoSansJP-Medium', sans-serif;
-	font-size: 2em;
+	font-size: 1.2em;
 	color: white;
 	text-transform: uppercase;
 	margin: 20px 0 70px 0;
@@ -340,7 +409,7 @@ footer ul a {
 	/*background: #ff9300;*/
 	color: white;
 	text-transform: uppercase;
-	padding: 10px 20px;
+	padding: 15px 35px 15px 25px;
 	font-size: 1em;
 	background-image: url('../img/assets/brush.png');
 	background-repeat: no-repeat;
@@ -348,6 +417,12 @@ footer ul a {
 	background-position: center center;
 	font-family: 'Noto Medium', sans-serif;
 	letter-spacing: 1px;
+	/*background-attachment: fixed;*/
+}
+
+.btn-brush:hover {
+	opacity: .7;
+	cursor: pointer;
 }
 
 /*
@@ -355,7 +430,7 @@ footer ul a {
  */
 
 .home-story {
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 	text-align: center;
 	padding: 100px;
@@ -368,7 +443,7 @@ footer ul a {
 .home-story h2 {
 	font-family: 'Leckerli', serif;
 	color: #ff7211;
-	font-size: 5em;
+	font-size: 4em;
 }
 .home-story p {
 	font-family: 'Noto Light', sans-serif;
@@ -381,7 +456,7 @@ footer ul a {
  */
 
 .block {
-	height: 95vh;
+	height: 85vh;
 	background-color: #ff7211;
 	border: 1px solid black;
 	position: relative;
@@ -389,16 +464,17 @@ footer ul a {
 }
 
 .block-text {
-	width: 80%;
+	width: 65%;
+	margin: 0 130px;
 	text-align: right;
 	position: absolute;
-	padding-left: 200px;
+	/*padding-left: 150px;*/
 	color: white;
 }
 
 .block-text h2 {
 	font-family: 'Noto Bold', sans-serif;
-	font-size: 6.25em;
+	font-size: 5em;
 	text-transform: uppercase;
 }
 
@@ -445,16 +521,18 @@ footer ul a {
 
 .fic-header {
 	background-color: #ffb500;
-	height: 50vh;
+	height: 55vh;
 	width: 100vw;
 	background-image: url('../img/hero//1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .fic-header-overlay {
+	width: 100%;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -467,6 +545,7 @@ footer ul a {
 	font-size: 4em;
 	color: white;
 	text-transform: uppercase;
+	padding-top: 50px;
 }
 
 /*
@@ -528,8 +607,8 @@ footer ul a {
  * Mid-hero
  */
 
-.parallax-container {
-	/*height: 700px;*/
+.about-wrapper .parallax-container {
+	height: 400px;
 }
 
 /*
@@ -634,6 +713,12 @@ footer ul a {
 	text-transform: uppercase;
 }
 
+.flavor-group-overlay p,
+.flavor-group-overlay p:active,
+.flavor-group-overlay p:visited {
+	color: #333;
+}
+
 .flavor-group-overlay .category {
 	font-family: 'noto light', sans-serif;
 	font-size: 1em;
@@ -700,13 +785,14 @@ footer ul a {
 
 .fic-slim-header {
 	background-color: #ffb500;
-	height: 30vh;
+	height: 40vh;
 	width: 100vw;
 	background-image: url('../img/hero//1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+	background-attachment: fixed;
 }
 
 .flavor-page {
@@ -776,6 +862,134 @@ footer ul a {
 
 /*
  *
+ * DISOVER
+ *
+ */
+
+.events,
+.blog {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.events {
+	padding: 50px 0 0 0;
+}
+
+.blog {
+	padding: 0 0 35px 0;
+}
+
+.calendar {
+	height: 600px;
+	/*height: 100%;*/
+	width: 100%;
+	background-color: #ff7211;
+	position: relative;
+	/*padding: 30px;*/
+}
+
+.calendar p {
+	position: absolute;
+	color: white;
+	font-family: 'Noto Bold', sans-serif;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.upcoming-events {
+	padding-left: 30px;
+}
+
+.upcoming-events h3,
+.latest-blog h3 {
+	font-family: 'Noto Bold', sans-serif;
+	color: #ff7211;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.upcoming-events div h3,
+.latest-blog div h3 {
+	font-size: 1.1em;	
+	font-family: 'Noto Medium', sans-serif;
+	padding: 0;
+	margin-bottom: 5px;
+	/*padding-top: 19px;*/
+}
+
+.upcoming-events p,
+.latest-blog p {
+	font-size: 1em;	
+	font-family: 'Noto Light', sans-serif;	
+	color: #333;
+	/*text-transform: uppercase;*/
+}
+
+.event-thumb,
+.blog-thumb {
+	background-color: black;
+	height: 124px;
+	padding: 0;
+	margin: 0 15px 0 0;
+}
+
+.blog-thumb {
+	height: 150px;
+}
+
+.event-thumb .row {
+	padding: 0;
+	margin: 0;
+}
+
+.event-thumb-overlay {
+	background-color: rgba(255,147,0,.5);
+	height: 124px;
+	width: 100%;
+	/*padding: 0 0 0 15px;*/
+	position: relative;
+	/*padding: 0 -15px;*/
+}
+
+.event-thumb-overlay-text {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.day,
+.month {
+	color: #333;
+	font-family: 'Noto Medium', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.day {
+	font-size: 1.7em;
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+}
+
+.month {
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.blog-btn {
+	text-align: center;
+	margin: 30px 0;
+}
+
+/*
+ *
  * CONTACT PAGE
  *
  */
@@ -789,17 +1003,31 @@ footer ul a {
 .contact-intro h2 {
 	color: #ff7211;
 	font-family: 'Noto Bold';
-	font-size: 3em;
+	font-size: 2.7em;
 }
 
 .contact-intro p {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .contact-map {
 	height: 700px;
 	width: 100%;
 	background-color: #ff7211;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=text]:focus + label {
+    color: #ff7211 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #ff7211 !important;
+    box-shadow: 0 1px 0 0 #ff7211 !important;
 }
 
 /*
@@ -838,7 +1066,140 @@ footer ul a {
 		margin: 0;
 	}
 
+	/*HOME*/
 
+	.fic-slide-overlay {
+		width: 75%;
+	}
+
+	.fic-slide-overlay h1 {
+		font-size: 5em;
+	}
+
+	.fic-slide-overlay h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.home-story {
+		width: 100%;
+		padding: 80px;
+	}
+
+	.block-text {
+		margin: 0 0 0 50px;
+		padding: 0;
+		width: 65%;
+	}
+
+	.block-text h2 {
+		font-size: 3em;
+	}
+
+	.block-text p {
+		font-size: 1em;
+	}
+
+	/*ABOUT*/
+
+	.about-two div,
+	.about-one div {
+		padding: 0;
+	}
+
+	.timeline .intro {
+		width: 90%;
+	}
+
+	.timeline .intro h2 {
+		font-size: 3em;
+	}
+
+	.timeline .year,
+	.timeline .event {
+		font-size: 1.5em;
+	}
+
+	.mvc {
+		width: 90%;
+	}
+
+	/*CONTACT*/
+	.contact-group {
+		width: 100%;
+		padding-bottom: 0;
+		margin: 0 auto;
+	}
+
+	.contact-form {
+		padding-top: 100px;
+	}
+
+	/*FLAVOURS*/
+
+	.fic-header-overlay {
+		width: 80%;
+	}
+	
+	.fic-header-overlay h2 {
+		font-size: 2.5em;
+		padding-top: 20px;
+	}
+
+	.flavor-catalogue {
+		width: 90%;
+	}
+
+	.flavor-filter {
+		width: 100%;
+	}
+
+	/*FLAVOUR PAGE*/
+
+	.flavor-description {
+		padding: 0;
+	}
+
+	.flavor-page .photo {
+		margin-bottom: 0;
+	}
+
+	.flavor-group-container {
+		height: 350px;
+	}
+
+	/*DISCOVER*/
+
+	.upcoming-events {
+		padding: 0;
+		margin: 50px 0 30px 0;
+	}
+
+	.upcoming-events p,
+	.latest-blog p {
+		font-size: .9em;
+	}
+
+	.calendar {
+		height: 280px;
+	}
+
+	.event-thumb,
+	.event-thumb-overlay,
+	.blog-thumb {
+		margin: 0;
+		height: 80px;
+	}
+
+	/*DISTROBUTOR*/
+
+	.distributor-wrapper {
+		width: 90%;
+	}
+
+	.distributor-map {
+		margin-top: 20px;
+	}
 }
 
 /*
@@ -876,6 +1237,115 @@ footer ul a {
 		margin: 0;
 	}
 
+	/*FOOTER*/
+
+
+	/*HOME*/
+
+	.fic-slide-overlay {
+		width: 80%;
+	}
+
+	.fic-slide-overlay h1 {
+		font-size: 6em;
+	}
+
+	.fic-slide-overlay h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+
+	.home-story {
+		width: 100%;
+	}
+
+	/*ABOUT*/
+
+	.about-two div,
+	.about-one div {
+		padding: 0;
+	}
+
+	.timeline .intro {
+		width: 90%;
+	}
+
+	.timeline .intro h2 {
+		font-size: 3em;
+	}
+
+	.timeline .year,
+	.timeline .event {
+		font-size: 1.5em;
+	}
+
+	.mvc {
+		width: 85%;
+	}
+
+	/*CONTACT*/
+
+	.contact-group {
+		width: 80%;
+		padding-bottom: 5px;
+	}
+
+	.contact {
+
+	}
+
+	.contact-form {
+		padding-top: 90px;
+	}
+
+	/*FLAVOURS*/
+
+	.fic-header-overlay {
+		width: 80%;
+	}
+
+	.fic-header-overlay h2 {
+		font-size: 2.5em;
+		padding-top: 20px;
+	}
+
+	.flavor-catalogue {
+		width: 90%;
+	}
+
+	.flavor-filter {
+		width: 100%;
+	}
+
+	/*FLAVOUR PAGE*/
+
+	.flavor-description {
+		padding: 0;
+	}
+
+	.flavor-page .photo {
+		margin-bottom: 0;
+	}
+
+	/*DISCOVER*/
+
+	.upcoming-events {
+		padding: 0;
+		margin: 50px 30px 30px 30px;
+	}
+
+	.latest-blog {
+		margin: 0 30px 30px 30px;
+	}
+
+	.calendar {
+		height: 400px;
+	}
+
+	/*DISTRIBUTOR*/
+	.distributor-map {
+		margin-top: 20px;
+	}
 
 }
 
@@ -906,6 +1376,12 @@ footer ul a {
 		/*font-size: 1.5em;*/
 	}
 
+	.page-footer .center-menu li {
+		float: left;
+		margin: 40px 0 0 0;
+		padding: 0 5px 5px 5px;
+	}
+
 	.right-menu ul {
 		padding-right: 30px;
 	}
@@ -917,7 +1393,7 @@ footer ul a {
 
 	nav ul a,
 	footer ul a {
-		font-size: 1em;
+		font-size: .9em;
 		/*color: red;*/
 		padding: 0 5px;
 	}
@@ -933,6 +1409,52 @@ footer ul a {
 		padding: 0;
 	}
 
+	/*HOME*/
+
+	.fic-slide-overlay h1 {
+		font-size: 6em;
+	}
+
+	.fic-slide-overlay h2 {
+		font-size: 1em;
+	}
+
+	.home-story {
+		width: 80%;
+	}
+
+	.block-text h2 {
+		font-size: 4em;
+	}
+
+	.block-text p {
+		font-size: 1.5em;
+	}
+
+	.block-text {
+		margin: 0 100px;
+	}
+
+	/*FLAVOURS*/
+
+	.fic-header-overlay h2 {
+		font-size: 3em;
+		/*padding-top: 40px;*/
+	}
+
+	.fic-header-overlay {
+		/*width: 100%;*/	
+	}
+
+	/*DISCOVER*/
+
+	.distributor-wrapper {
+		width: 80%;
+	}
+
+	.distributor-map {
+		height: 400px;
+	}
 }
 
 /*
@@ -941,7 +1463,7 @@ footer ul a {
  *
  */
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
 
 
 	/* Navbar On-scroll */
@@ -953,6 +1475,47 @@ footer ul a {
 
 	.nav-fix {
 		padding: 0;
+	}
+
+	/*FLAVOURS*/
+
+	.flavor-group-container {
+		/*height: 350px;*/
+	}
+
+	/*DICOVER*/
+
+	.calendar {
+		height: 500px;
+	}
+
+	.event-thumb,
+	.event-thumb-overlay {
+		height: 99px;
+	}
+
+}
+
+/*
+ *
+ * Media Query XXL - Extra Large Desktop
+ *
+ */
+
+@media only screen and (min-width: 1800px){
+
+
+	/*DISCOVER*/
+
+	.events,
+	.blog {
+		width: 70%;
+	}
+
+	/*DISTROBUTOR*/
+
+	.distributor-wrapper {
+		width: 60%;
 	}
 
 }
